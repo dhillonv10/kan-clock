@@ -17,20 +17,18 @@ Epigenetic clocks are biomarkers of aging that leverage DNA methylation patterns
 - **Comprehensive Preprocessing and Validation:**  
   - MICE imputation for missing CpG values  
   - Scaling and normalization for consistent feature representation  
-  - Extensive validation across different datasets to ensure generalizability  
-- **Epigenetic Age Acceleration:**  
-  - Derive biological age estimates and compute epigenetic age acceleration metrics to explore aging patterns
+  - Extensive validation across different datasets to ensure generalizability
 
 ### Data Source and Processing
-The primary data source for this project is the EWAS Data Hub’s dataset on [DNA methylation changes with age](https://download.cncb.ac.cn/ewas/datahub/download/age_methylation_v1.zip). Steps taken include:
+The primary data source for this project is studies deposited on NCBI Gene Expression Omnibus (GEO), and the [ComputAge Bench Dataset](https://huggingface.co/datasets/computage/computage_bench). Post-processing steps taken include:
 
 - **Data Transformation:**  
   Original data was transposed so that each CpG site corresponds to a column and each sample (patient ID) corresponds to a row, aligning with standard machine learning data formats.
   
 - **Missing Value Filtering:**  
-  CpG sites with more than 30% missing values were removed to ensure data quality, leaving approximately 8,000 samples for modeling.
+  CpG sites with more than 30% missing values were removed to ensure data quality, leaving approximately 9,000 samples for model training.
 
 - **Imputation and Normalization:**  
   Post-filtering, MICE imputation was used to estimate missing CpG values, followed by scaling to standardize feature distributions.
 
-The prepared training dataset can be accessed from [Hugging Face](https://huggingface.co/datasets/dhillonv10/KAN-clock) for replication and further analysis.
+The prepared training and validation datasets can be accessed from [Hugging Face](https://huggingface.co/datasets/dhillonv10/KAN-clock) for replication and further analysis.
