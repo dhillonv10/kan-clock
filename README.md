@@ -360,12 +360,4 @@ Overall Performance Summary:
 10  GSE132203        795            200           100.0  3.608828  0.733986  6.345746
 
 Execution completed successfully!
-Results are saved in: results_20241215_040541
-
-Key files saved:
-- Models and age bins: results/stacked_models.pt
-- Preprocessing components: results/preprocessing.joblib
-- All metrics: results/all_metrics.json
-- Detailed inference results: results/inference_details.json
-- Summary report: results/inference_summary.csv
 ```
