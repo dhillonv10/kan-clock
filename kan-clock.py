@@ -29,8 +29,8 @@ from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from biolearn.data_library import DataLibrary
 
-TRAIN_PATH = '/home/hmhvxd/scratch/clock/EWA/HMB/consolidated_train.csv'
-TEST_PATH = '/home/hmhvxd/scratch/clock/EWA/HMB/consolidated_test.csv'
+TRAIN_PATH = 'consolidated_train.csv'
+TEST_PATH = 'consolidated_test.csv'
 N_FEATURES = 200
 
 class StackedAgeKAN:
